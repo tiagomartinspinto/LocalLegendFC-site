@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#070a08"/>
+  <rect x="4" y="4" width="56" height="56" fill="none" stroke="#3abf5a" stroke-width="2"/>
+  <text x="8" y="26" font-family="monospace" font-size="12" font-weight="900" fill="#74ff7a">LOCAL</text>
+  <text x="7" y="39" font-family="monospace" font-size="11" font-weight="900" fill="#74ff7a">LEGEND</text>
+  <text x="18" y="55" font-family="monospace" font-size="18" font-weight="900" fill="#ffd15a">FC</text>
+</svg>
