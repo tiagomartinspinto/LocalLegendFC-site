@@ -1,0 +1,8 @@
+title: Local Legend FC
+description: Small Club, Big Dreams — a premium offline retro football management game.
+url: https://tiagomartinspinto.github.io
+baseurl: /LocalLegendFC-site
+markdown: kramdown
+plugins: []
+exclude:
+  - README.md
