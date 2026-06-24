@@ -38,7 +38,7 @@ Apple may process download, purchase, TestFlight, device, or crash-related infor
 Questions about this privacy policy may be sent to:
 
 **Developer:** Tiago Martins Pinto<br>
-**Email:** TODO: support email
+**Email:** LocalLegendFC@protonmail.com
 
 ## Changes to This Policy
 

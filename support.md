@@ -9,7 +9,7 @@ Local Legend FC is a premium offline retro football management game about buildi
 
 [Home](https://tiagomartinspinto.github.io/LocalLegendFC-site/) · [Privacy Policy](https://tiagomartinspinto.github.io/LocalLegendFC-site/privacy/)
 
-**Support contact:** TODO: support email
+**Support contact:** LocalLegendFC@protonmail.com
 
 When contacting support, include the app version, iPhone model, iOS version, and a short description of what happened. Do not send sensitive personal information.
 
