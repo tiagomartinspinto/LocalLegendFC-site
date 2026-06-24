@@ -24,7 +24,7 @@ Final screenshots will be added after the App Store release candidate is approve
 
 1. Capture the final release build using the approved App Store screenshot plan.
 2. Approve the screenshots for the App Store before publishing them here.
-3. Add the selected images under `docs/assets/screenshots/`.
+3. Add the selected images under `assets/screenshots/`.
 4. Replace this instruction section with the approved image gallery.
 
 Do not publish screenshots containing notifications, debug overlays, placeholder contact details, or unintended references to real players, clubs, leagues, or competitions.
