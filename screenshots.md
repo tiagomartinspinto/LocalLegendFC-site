@@ -1,30 +1,61 @@
 ---
+layout: default
 title: Screenshots
 permalink: /screenshots/
 ---
 
-# Local Legend FC Screenshots
+# Screenshots
 
-[Home](https://tiagomartinspinto.github.io/LocalLegendFC-site/) · [Support](https://tiagomartinspinto.github.io/LocalLegendFC-site/support/) · [Privacy Policy](https://tiagomartinspinto.github.io/LocalLegendFC-site/privacy/)
+A look at the current Local Legend FC release candidate.
 
-Final screenshots will be added after the App Store release candidate is approved.
+<div class="screenshot-grid">
+  <figure>
+    <img src="{{ '/assets/screenshots/01-main-menu.png' | relative_url }}" alt="Local Legend FC main menu">
+    <figcaption>Main menu</figcaption>
+  </figure>
 
-## Planned Gallery
+  <figure>
+    <img src="{{ '/assets/screenshots/02-save-slots.png' | relative_url }}" alt="Save slots screen">
+    <figcaption>Save slots</figcaption>
+  </figure>
 
-1. **Small Club. Big Dreams.** — Main menu
-2. **Choose Your Footballing Home.** — Country, region, and fictional club selection
-3. **Build a Club. Become a Legend.** — Dashboard and legacy progress
-4. **Every Match Tells a Story.** — Live match events
-5. **Change the Game at Half-Time.** — Tactics and substitutions
-6. **Climb the Football Pyramid.** — League progress or promotion
-7. **Every Player Leaves a Record.** — Player season and career statistics
-8. **Offline. Private. Fully Fictional.** — About and privacy information
+  <figure>
+    <img src="{{ '/assets/screenshots/03-new-game-country.png' | relative_url }}" alt="New game country selection">
+    <figcaption>Choose a country</figcaption>
+  </figure>
 
-## Publishing Instructions
+  <figure>
+    <img src="{{ '/assets/screenshots/04-new-game-club.png' | relative_url }}" alt="New game club selection">
+    <figcaption>Choose a local club</figcaption>
+  </figure>
 
-1. Capture the final release build using the approved App Store screenshot plan.
-2. Approve the screenshots for the App Store before publishing them here.
-3. Add the selected images under `assets/screenshots/`.
-4. Replace this instruction section with the approved image gallery.
+  <figure>
+    <img src="{{ '/assets/screenshots/05-dashboard.png' | relative_url }}" alt="Club dashboard">
+    <figcaption>Club dashboard</figcaption>
+  </figure>
 
-Do not publish screenshots containing notifications, debug overlays, placeholder contact details, or unintended references to real players, clubs, leagues, or competitions.
+  <figure>
+    <img src="{{ '/assets/screenshots/06-squad.png' | relative_url }}" alt="Squad screen">
+    <figcaption>Squad</figcaption>
+  </figure>
+
+  <figure>
+    <img src="{{ '/assets/screenshots/07-match.png' | relative_url }}" alt="Match result screen">
+    <figcaption>Match result</figcaption>
+  </figure>
+
+  <figure>
+    <img src="{{ '/assets/screenshots/08-halftime-substitution.png' | relative_url }}" alt="Half-time substitutions screen">
+    <figcaption>Half-time</figcaption>
+  </figure>
+
+  <figure>
+    <img src="{{ '/assets/screenshots/09-league-table.png' | relative_url }}" alt="League table">
+    <figcaption>League table</figcaption>
+  </figure>
+
+  <figure>
+    <img src="{{ '/assets/screenshots/10-about.png' | relative_url }}" alt="About screen">
+    <figcaption>About</figcaption>
+  </figure>
+</div>

@@ -297,3 +297,22 @@ a:focus {
     text-align: center;
   }
 }
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  color: var(--dim);
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.screenshot-grid img {
+  display: block;
+  width: 100%;
+  border: 2px solid var(--line);
+  background: #000;
+}
