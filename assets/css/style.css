@@ -665,3 +665,46 @@ figcaption {
     opacity: 0.08;
   }
 }
+
+/* --- remove duplicate header wordmark --- */
+
+.site-mark-icon-only {
+  width: 62px !important;
+  height: 62px !important;
+  padding: 8px !important;
+  gap: 0 !important;
+}
+
+.site-mark-icon-only img {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+}
+
+.site-mark-text {
+  display: none !important;
+}
+
+/* Hero remains the only big wordmark */
+.hero h1 {
+  max-width: 760px !important;
+}
+
+/* On mobile keep the icon compact, not full-width */
+@media (max-width: 720px) {
+  .site-mark-icon-only {
+    width: 54px !important;
+    height: 54px !important;
+    padding: 7px !important;
+  }
+
+  .site-mark-icon-only img {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+  }
+
+  .site-mark {
+    width: auto !important;
+  }
+}
