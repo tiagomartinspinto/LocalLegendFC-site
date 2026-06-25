@@ -591,6 +591,43 @@ figcaption {
   color: var(--amber-2);
 }
 
+.share {
+  margin: 26px 0 0;
+  text-align: center;
+}
+
+.share .eyebrow {
+  margin-bottom: 10px;
+}
+
+.share-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 14px;
+  margin: 0;
+}
+
+.share-links a,
+.share-links button {
+  color: var(--muted);
+  font-size: 8px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.share-links a:hover,
+.share-links a:focus-visible,
+.share-links button:hover,
+.share-links button:focus-visible {
+  color: var(--amber);
+}
+
 .note-box {
   margin-top: 18px;
   border-color: var(--amber-2);

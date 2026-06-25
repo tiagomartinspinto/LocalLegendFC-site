@@ -6,7 +6,7 @@ permalink: /screenshots/
 
 # Screenshots
 
-A look at the current Local Legend FC v1.0 release candidate. The game uses a fictional football world, local saves, and a paid upfront offline model.
+A look at Local Legend FC, coming soon to iPhone. The game uses a fictional football world, local saves, and a paid upfront, offline model.
 
 <div class="screenshot-grid">
   <figure>

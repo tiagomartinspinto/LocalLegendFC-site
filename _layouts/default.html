@@ -7,7 +7,7 @@
   {% assign meta_title = page.meta_title | default: page.title | default: site.title | default: 'Local Legend FC' %}
   {% assign meta_description = page.description | default: site.description | default: 'An offline retro indie football management game about building a tiny fictional club into a local legend.' %}
   {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
-  {% assign social_image = '/assets/social-card.png' | absolute_url %}
+  {% assign social_image = '/assets/app-icon.png' | absolute_url %}
 
   <title>{% if page.url == '/' %}{{ site.title | default: 'Local Legend FC' }}{% elsif page.title %}{{ page.title }} · {{ site.title | default: 'Local Legend FC' }}{% else %}{{ site.title | default: 'Local Legend FC' }}{% endif %}</title>
   <meta name="description" content="{{ meta_description }}">
@@ -19,20 +19,22 @@
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:image" content="{{ social_image }}">
   <meta property="og:image:alt" content="Local Legend FC, a retro indie football management game">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ meta_title }}">
   <meta name="twitter:description" content="{{ meta_description }}">
   <meta name="twitter:image" content="{{ social_image }}">
 
   <link rel="canonical" href="{{ canonical_url }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/app-icon.png' | relative_url }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/app-icon.png' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=lower-20260625">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=launch-20260625">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -58,7 +60,7 @@
     {% if page.url == '/' %}
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">&gt; Coming soon!<span class="cursor">_</span></p>
+          <p class="eyebrow">&gt; Coming soon to iPhone<span class="cursor">_</span></p>
           <h1>Local Legend FC</h1>
           <p class="hero-text">An offline, retro indie football management game about building a tiny fictional club into a local legend.</p>
           <div class="hero-actions">
@@ -70,9 +72,11 @@
         <aside class="system-card" aria-label="Game status">
           <p class="system-title">GAME STATUS</p>
           <dl>
-            <div><dt>Status</dt><dd>Release candidate</dd></div>
+            <div><dt>Status</dt><dd>Coming soon</dd></div>
+            <div><dt>Platform</dt><dd>iPhone</dd></div>
             <div><dt>Model</dt><dd>Paid upfront</dd></div>
             <div><dt>Network</dt><dd>Offline</dd></div>
+            <div><dt>Ads</dt><dd>None</dd></div>
             <div><dt>Tracking</dt><dd>None</dd></div>
           </dl>
         </aside>
@@ -85,7 +89,7 @@
   </main>
 
   <footer class="site-footer">
-    <span>Paid upfront retro football management.</span>
+    <span>Coming soon to iPhone. Paid upfront.</span>
     <span>No ads. No tracking.</span>
     <a href="mailto:LocalLegendFC@protonmail.com">LocalLegendFC@protonmail.com</a>
   </footer>
@@ -99,6 +103,29 @@
         var open = nav.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
+    })();
+
+    (function () {
+      var url = 'https://locallegendfc.com/';
+      var text = 'Local Legend FC, a retro indie football management game. Coming soon to iPhone.';
+      var nativeBtn = document.querySelector('.js-share');
+      if (nativeBtn && navigator.share) {
+        nativeBtn.hidden = false;
+        nativeBtn.addEventListener('click', function () {
+          navigator.share({ title: 'Local Legend FC', text: text, url: url }).catch(function () {});
+        });
+      }
+      var copyBtn = document.querySelector('.js-copy');
+      if (copyBtn && navigator.clipboard) {
+        copyBtn.hidden = false;
+        copyBtn.addEventListener('click', function () {
+          navigator.clipboard.writeText(url).then(function () {
+            var label = copyBtn.textContent;
+            copyBtn.textContent = 'Copied!';
+            setTimeout(function () { copyBtn.textContent = label; }, 1500);
+          }).catch(function () {});
+        });
+      }
     })();
   </script>
 </body>
