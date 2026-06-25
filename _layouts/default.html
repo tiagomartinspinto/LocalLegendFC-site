@@ -4,17 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title | default: 'Local Legend FC' }}</title>
-  <meta name="description" content="{{ page.description | default: site.description | default: 'A premium offline retro football-management game about building a tiny fictional club into a local legend.' }}">
+  <meta name="description" content="{{ page.description | default: site.description | default: 'A premium offline retro football management game about building a tiny fictional club into a local legend.' }}">
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
-  <div class="crt" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand-icon-link" href="{{ '/' | relative_url }}" aria-label="Local Legend FC home">
-      <img class="brand-icon-only" src="{{ '/assets/app-icon.png' | relative_url }}" alt="" aria-hidden="true">
+    <a class="site-mark" href="{{ '/' | relative_url }}" aria-label="Local Legend FC home">
+      <img src="{{ '/assets/app-icon.png' | relative_url }}" alt="" aria-hidden="true">
+      <span class="site-mark-text">
+        <span>Local Legend</span>
+        <strong>FC</strong>
+      </span>
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
@@ -27,34 +32,37 @@
 
   <main class="page-shell" id="content">
     {% if page.url == '/' %}
-      <section class="hero panel" aria-label="Local Legend FC overview">
+      <section class="hero">
         <div class="hero-copy">
-          <p class="prompt">&gt; SMALL CLUB, BIG DREAMS<span class="cursor">_</span></p>
+          <p class="eyebrow">&gt; Small club, big dreams<span class="cursor">_</span></p>
           <h1>Local Legend FC</h1>
-          <p class="tagline">A premium offline retro football-management game about building a tiny fictional club into a local legend.</p>
+          <p class="hero-text">A premium offline retro football management game about building a tiny fictional club into a local legend.</p>
           <div class="hero-actions">
-            <a class="button" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
-            <a class="button secondary" href="{{ '/privacy/' | relative_url }}">Privacy promise</a>
+            <a class="button primary" href="{{ '/screenshots/' | relative_url }}">View screenshots</a>
+            <a class="button" href="{{ '/privacy/' | relative_url }}">Privacy promise</a>
           </div>
         </div>
-        <div class="hero-terminal" aria-label="Game promise">
-          <span class="terminal-title">LLFC.EXE</span>
-          <span>STATUS: RELEASE CANDIDATE</span>
-          <span>MODEL: PAID UPFRONT</span>
-          <span>NETWORK: OFFLINE</span>
-          <span>TRACKING: NONE</span>
-        </div>
+
+        <aside class="system-card" aria-label="Game status">
+          <p class="system-title">LLFC.EXE</p>
+          <dl>
+            <div><dt>Status</dt><dd>Release candidate</dd></div>
+            <div><dt>Model</dt><dd>Paid upfront</dd></div>
+            <div><dt>Network</dt><dd>Offline</dd></div>
+            <div><dt>Tracking</dt><dd>None</dd></div>
+          </dl>
+        </aside>
       </section>
     {% endif %}
 
-    <article class="content {% unless page.url == '/' %}panel{% endunless %}">
+    <article class="content {% unless page.url == '/' %}content-panel{% endunless %}">
       {{ content }}
     </article>
   </main>
 
   <footer class="site-footer">
-    <span>Premium. Offline. No ads. No tracking.</span>
-    <span class="footer-sep">·</span>
+    <span>Premium offline football management.</span>
+    <span>No ads. No tracking.</span>
     <a href="mailto:LocalLegendFC@protonmail.com">LocalLegendFC@protonmail.com</a>
   </footer>
 </body>
