@@ -33,6 +33,10 @@ The app itself does not integrate third-party advertising, analytics, tracking, 
 
 Apple may process download, purchase, TestFlight, device, or crash-related information as part of operating the App Store and TestFlight. That processing is controlled by Apple and is subject to Apple's own privacy policies. Local Legend FC does not receive personal data from the app itself.
 
+## Website
+
+This website may load fonts from Google Fonts, so it may request font files from Google. This is separate from the app, which does not collect personal data. The website itself does not use analytics, advertising, or tracking scripts.
+
 ## Contact
 
 Questions about this privacy policy may be sent to:
