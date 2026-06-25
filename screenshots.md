@@ -6,9 +6,9 @@ permalink: /screenshots/
 
 # Screenshots
 
-A look at the current Local Legend FC release candidate.
+A look at the current Local Legend FC v1.0 release candidate. The game uses a fictional football world, local saves, and a fully offline premium model.
 
-<div class="screenshot-grid">
+<div class="screenshot-grid gallery-polished">
   <figure>
     <img src="{{ '/assets/screenshots/01-main-menu.png' | relative_url }}" alt="Local Legend FC main menu">
     <figcaption>Main menu</figcaption>
