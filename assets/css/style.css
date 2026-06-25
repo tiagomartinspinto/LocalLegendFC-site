@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 :root {
   --bg: #050805;
   --bg-soft: #081308;
   --panel: #0b130c;
-  --panel-2: #101c11;
   --green: #74ff7a;
-  --green-2: #36c45a;
   --amber: #ffd15a;
   --amber-2: #c28a2e;
   --text: #e6ffe6;
@@ -12,11 +12,15 @@
   --dim: #789278;
   --line: #286239;
   --line-strong: #4bd46b;
-  --shadow: rgba(0, 0, 0, 0.72);
+  --font: "Press Start 2P", Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  font-family: var(--font) !important;
+  font-variant-ligatures: none;
 }
 
 html {
@@ -32,10 +36,10 @@ body {
     radial-gradient(circle at 15% 0%, rgba(116, 255, 122, 0.16), transparent 32rem),
     radial-gradient(circle at 88% 8%, rgba(255, 209, 90, 0.08), transparent 26rem),
     linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 72%);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.01em;
+  font-size: 11px;
+  line-height: 1.9;
+  letter-spacing: 0;
+  -webkit-font-smoothing: none;
   text-rendering: geometricPrecision;
 }
 
@@ -79,7 +83,6 @@ body {
   padding: 10px 12px;
   color: var(--bg);
   background: var(--amber);
-  font-weight: 900;
 }
 
 .skip-link:focus {
@@ -113,60 +116,34 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 22px;
+  gap: 18px;
   padding: 24px 0 18px;
 }
 
 .site-mark {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  min-width: 0;
-  padding: 8px 10px;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
   border: 2px solid var(--line-strong);
-  color: var(--text);
   background: rgba(5, 8, 5, 0.92);
   box-shadow: 4px 4px 0 #000;
-  text-decoration: none;
 }
 
 .site-mark:hover,
 .site-mark:focus-visible {
   border-color: var(--amber);
-  color: var(--text);
   text-decoration: none;
 }
 
 .site-mark img {
   display: block;
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
-  border: 1px solid var(--line);
-  background: #000;
   image-rendering: pixelated;
-}
-
-.site-mark-text {
-  display: grid;
-  gap: 0;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.site-mark-text span {
-  color: var(--green);
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-}
-
-.site-mark-text strong {
-  color: var(--amber);
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: 0.18em;
 }
 
 .site-nav {
@@ -182,13 +159,12 @@ a:focus-visible {
   justify-content: center;
   min-height: 40px;
   border: 1px solid var(--line);
-  padding: 8px 11px;
+  padding: 9px 11px;
   color: var(--text);
   background: rgba(8, 14, 9, 0.78);
   box-shadow: 3px 3px 0 #000;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-size: 8px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -198,6 +174,16 @@ a:focus-visible {
   background: var(--green);
   border-color: var(--green);
   text-decoration: none;
+}
+
+.site-nav a::before,
+.button::before {
+  content: "[";
+}
+
+.site-nav a::after,
+.button::after {
+  content: "]";
 }
 
 .page-shell {
@@ -233,9 +219,8 @@ a:focus-visible {
 figcaption {
   margin: 0 0 12px;
   color: var(--amber);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.15em;
+  font-size: 8px;
+  line-height: 1.7;
   text-transform: uppercase;
 }
 
@@ -252,20 +237,21 @@ figcaption {
   max-width: 820px;
   margin: 0;
   color: var(--green);
-  font-size: clamp(42px, 7vw, 78px);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
+  font-size: clamp(28px, 5.2vw, 56px);
+  line-height: 1.18;
+  letter-spacing: 0;
   text-transform: uppercase;
   text-shadow:
-    0 0 8px rgba(116, 255, 122, 0.26),
+    0 0 7px rgba(116, 255, 122, 0.25),
     3px 3px 0 #102d18;
 }
 
 .hero-text {
-  max-width: 700px;
+  max-width: 720px;
   margin: 18px 0 0;
   color: var(--text);
-  font-size: clamp(16px, 2vw, 21px);
+  font-size: 11px;
+  line-height: 1.95;
 }
 
 .hero-actions {
@@ -279,15 +265,14 @@ figcaption {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
+  min-height: 42px;
   border: 2px solid var(--green);
-  padding: 10px 14px;
+  padding: 9px 12px;
   color: var(--green);
   background: transparent;
   box-shadow: 3px 3px 0 #000;
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  font-size: 8px;
+  line-height: 1.6;
   text-transform: uppercase;
 }
 
@@ -345,18 +330,18 @@ figcaption {
 .content h2,
 .content h3 {
   color: var(--green);
-  line-height: 1.15;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
 .content h1 {
   margin-top: 0;
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(20px, 3.6vw, 34px);
 }
 
 .content h2 {
   margin: 0 0 0.8rem;
-  font-size: clamp(23px, 3vw, 34px);
+  font-size: clamp(15px, 2.1vw, 22px);
 }
 
 .content > h2 {
@@ -366,7 +351,17 @@ figcaption {
 }
 
 .content h3 {
-  font-size: clamp(17px, 1.8vw, 20px);
+  font-size: clamp(12px, 1.4vw, 16px);
+}
+
+.content p,
+.content li,
+.lead-copy p,
+.release-card p,
+.note-box p,
+.system-card {
+  font-size: 10px;
+  line-height: 1.95;
 }
 
 .content strong {
@@ -408,16 +403,15 @@ figcaption {
 
 .release-card span {
   color: var(--amber);
-  font-size: 12px;
-  font-weight: 900;
-  letter-spacing: 0.15em;
+  font-size: 8px;
+  line-height: 1.7;
   text-transform: uppercase;
 }
 
 .release-card strong {
   color: var(--green);
-  font-size: 21px;
-  line-height: 1.15;
+  font-size: 13px;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
@@ -442,8 +436,8 @@ figcaption {
   padding: 10px 8px;
   color: var(--bg);
   background: var(--amber);
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 8px;
+  line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
 }
@@ -461,12 +455,16 @@ figcaption {
 
 .feature-grid h3 {
   margin: 0 0 10px;
-  font-size: clamp(17px, 1.8vw, 20px);
+  font-size: clamp(12px, 1.4vw, 16px);
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .feature-grid p {
   margin: 0;
   color: var(--muted);
+  font-size: 10px;
+  line-height: 1.95;
 }
 
 .screenshot-preview {
@@ -509,8 +507,8 @@ figcaption {
   display: block;
   margin-top: 10px;
   color: var(--amber);
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 8px;
+  line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
 }
@@ -554,7 +552,8 @@ figcaption {
   gap: 12px;
   padding: 22px 0 34px;
   color: var(--dim);
-  font-size: 13px;
+  font-size: 8px;
+  line-height: 1.8;
   text-align: center;
 }
 
@@ -587,13 +586,14 @@ figcaption {
   }
 
   .site-mark {
-    width: 100%;
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
   }
 
   .site-mark img {
     width: 38px;
     height: 38px;
-    min-width: 38px;
   }
 
   .site-nav {
@@ -604,6 +604,7 @@ figcaption {
 
   .site-nav a {
     width: 100%;
+    font-size: 7px;
   }
 
   .page-shell {
@@ -616,11 +617,7 @@ figcaption {
   }
 
   .hero h1 {
-    font-size: clamp(38px, 12vw, 62px);
-  }
-
-  .hero-text {
-    font-size: 16px;
+    font-size: clamp(24px, 9vw, 40px);
   }
 
   .hero-actions {
@@ -630,6 +627,7 @@ figcaption {
 
   .button {
     width: 100%;
+    font-size: 7px;
   }
 
   .feature-grid,
@@ -652,7 +650,7 @@ figcaption {
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
@@ -663,368 +661,5 @@ figcaption {
 
   .scanlines {
     opacity: 0.08;
-  }
-}
-
-/* --- remove duplicate header wordmark --- */
-
-.site-mark-icon-only {
-  width: 62px !important;
-  height: 62px !important;
-  padding: 8px !important;
-  gap: 0 !important;
-}
-
-.site-mark-icon-only img {
-  width: 44px !important;
-  height: 44px !important;
-  min-width: 44px !important;
-}
-
-.site-mark-text {
-  display: none !important;
-}
-
-/* Hero remains the only big wordmark */
-.hero h1 {
-  max-width: 760px !important;
-}
-
-/* On mobile keep the icon compact, not full-width */
-@media (max-width: 720px) {
-  .site-mark-icon-only {
-    width: 54px !important;
-    height: 54px !important;
-    padding: 7px !important;
-  }
-
-  .site-mark-icon-only img {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-  }
-
-  .site-mark {
-    width: auto !important;
-  }
-}
-
-/* --- full-site retro computer font pass --- */
-
-/* Use old-computer style system fonts everywhere, no external fonts */
-:root {
-  --retro-font: "Monaco", "Menlo", "Consolas", "Lucida Console", "Courier New", monospace;
-}
-
-/* Force every visible element to use the retro computer stack */
-html,
-body,
-button,
-input,
-textarea,
-select,
-a,
-p,
-span,
-strong,
-em,
-small,
-li,
-dt,
-dd,
-figcaption,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.site-nav a,
-.button,
-.system-card,
-.release-card,
-.feature-grid article,
-.trust-strip,
-.site-footer {
-  font-family: var(--retro-font) !important;
-}
-
-/* Make browser text look less smooth and more old-display-like */
-body {
-  -webkit-font-smoothing: none;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: never;
-  font-variant-ligatures: none;
-}
-
-/* More balanced retro type hierarchy */
-.hero h1 {
-  font-family: var(--retro-font) !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.035em !important;
-  text-transform: uppercase !important;
-}
-
-.content h1,
-.content h2,
-.content h3,
-.feature-grid h3,
-.release-card strong,
-.site-mark-text span,
-.site-mark-text strong {
-  font-family: var(--retro-font) !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.04em !important;
-  text-transform: uppercase !important;
-}
-
-/* DOS-style small labels */
-.eyebrow,
-.system-title,
-.feature-grid article span,
-figcaption,
-.site-nav a,
-.button,
-.trust-strip span,
-.release-card span {
-  font-family: var(--retro-font) !important;
-  font-weight: 900 !important;
-  letter-spacing: 0.14em !important;
-  text-transform: uppercase !important;
-}
-
-/* Body copy should still be readable */
-p,
-li,
-dd,
-dt {
-  letter-spacing: 0.015em !important;
-}
-
-/* Terminal-style text rhythm */
-.content p,
-.content li,
-.hero-text,
-.lead-copy p,
-.note-box p,
-.system-card,
-.release-card p {
-  font-size: 16px !important;
-  line-height: 1.62 !important;
-}
-
-/* Make buttons feel like keyboard commands */
-.button::before,
-.site-nav a::before {
-  content: "[";
-  color: currentColor;
-}
-
-.button::after,
-.site-nav a::after {
-  content: "]";
-  color: currentColor;
-}
-
-/* Keep nav readable after adding brackets */
-.site-nav a {
-  gap: 2px !important;
-}
-
-/* Stronger command-line heading style */
-.content h2::before,
-.feature-grid h3::before {
-  content: "> ";
-  color: var(--amber);
-}
-
-/* Do not prefix homepage hero/title duplicates */
-.hero h1::before,
-.section-heading h2::before,
-.lead-copy h2::before {
-  content: none !important;
-}
-
-/* Mobile readability */
-@media (max-width: 720px) {
-  body {
-    font-size: 15px !important;
-  }
-
-  .content p,
-  .content li,
-  .hero-text,
-  .lead-copy p,
-  .note-box p,
-  .system-card,
-  .release-card p {
-    font-size: 15px !important;
-    line-height: 1.58 !important;
-  }
-
-  .site-nav a,
-  .button {
-    font-size: 11px !important;
-    letter-spacing: 0.1em !important;
-  }
-}
-
-/* --- Google Font: Press Start 2P --- */
-
-:root {
-  --retro-font: "Press Start 2P", "Monaco", "Menlo", "Consolas", "Courier New", monospace;
-}
-
-/* Use Press Start 2P across the whole website */
-html,
-body,
-button,
-input,
-textarea,
-select,
-a,
-p,
-span,
-strong,
-em,
-small,
-li,
-dt,
-dd,
-figcaption,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.site-nav a,
-.button,
-.system-card,
-.release-card,
-.feature-grid article,
-.trust-strip,
-.site-footer {
-  font-family: var(--retro-font) !important;
-}
-
-/* Press Start 2P needs smaller sizes and more line height */
-body {
-  font-size: 12px !important;
-  line-height: 1.85 !important;
-  letter-spacing: 0 !important;
-  -webkit-font-smoothing: none;
-  font-variant-ligatures: none;
-}
-
-.hero h1 {
-  font-size: clamp(30px, 5.4vw, 58px) !important;
-  line-height: 1.15 !important;
-  letter-spacing: 0 !important;
-}
-
-.hero-text,
-.tagline {
-  font-size: clamp(12px, 1.45vw, 15px) !important;
-  line-height: 1.9 !important;
-  max-width: 760px !important;
-}
-
-.content,
-.content p,
-.content li,
-.lead-copy p,
-.note-box p,
-.release-card p,
-.system-card {
-  font-size: 11px !important;
-  line-height: 1.9 !important;
-}
-
-.content h1 {
-  font-size: clamp(22px, 4vw, 36px) !important;
-  line-height: 1.25 !important;
-}
-
-.content h2,
-.lead-copy h2,
-.section-heading h2 {
-  font-size: clamp(16px, 2.4vw, 24px) !important;
-  line-height: 1.4 !important;
-}
-
-.content h3,
-.feature-grid h3 {
-  font-size: clamp(12px, 1.4vw, 16px) !important;
-  line-height: 1.45 !important;
-}
-
-.eyebrow,
-.system-title,
-.feature-grid article span,
-figcaption,
-.site-nav a,
-.button,
-.trust-strip span,
-.release-card span {
-  font-size: 9px !important;
-  line-height: 1.6 !important;
-  letter-spacing: 0.02em !important;
-}
-
-.site-mark-text span,
-.site-mark-text strong {
-  font-size: 10px !important;
-  line-height: 1.25 !important;
-  letter-spacing: 0 !important;
-}
-
-.site-nav a,
-.button {
-  min-height: 42px !important;
-  padding: 9px 10px !important;
-}
-
-/* Reduce title glow because Press Start 2P already has strong shape */
-.hero h1,
-.content h1,
-.content h2,
-.content h3 {
-  text-shadow:
-    0 0 6px rgba(116, 255, 122, 0.22),
-    3px 3px 0 #102d18 !important;
-}
-
-/* Mobile: keep it readable */
-@media (max-width: 720px) {
-  body {
-    font-size: 11px !important;
-    line-height: 1.85 !important;
-  }
-
-  .hero h1 {
-    font-size: clamp(26px, 10vw, 42px) !important;
-    line-height: 1.18 !important;
-  }
-
-  .hero-text,
-  .tagline,
-  .content,
-  .content p,
-  .content li,
-  .lead-copy p,
-  .note-box p,
-  .release-card p,
-  .system-card {
-    font-size: 10px !important;
-    line-height: 1.9 !important;
-  }
-
-  .site-nav a,
-  .button,
-  .eyebrow,
-  .system-title,
-  figcaption {
-    font-size: 8px !important;
   }
 }
