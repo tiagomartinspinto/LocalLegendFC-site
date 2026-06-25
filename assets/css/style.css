@@ -1111,3 +1111,69 @@ figcaption,
     opacity: 0.11;
   }
 }
+
+/* --- emergency logo size fix --- */
+
+.site-header .brand-with-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  width: auto !important;
+  max-width: 320px !important;
+  padding: 8px 10px !important;
+}
+
+.site-header .brand-icon {
+  display: block !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
+  object-fit: contain !important;
+  border: 1px solid var(--line) !important;
+  image-rendering: pixelated !important;
+  box-shadow: 2px 2px 0 #000 !important;
+}
+
+.site-header .brand-copy {
+  display: grid !important;
+  gap: 1px !important;
+}
+
+.site-header .brand-title {
+  font-size: 16px !important;
+  line-height: 0.95 !important;
+  letter-spacing: 0.04em !important;
+}
+
+.site-header .brand-fc {
+  font-size: 15px !important;
+  line-height: 1 !important;
+  letter-spacing: 0.14em !important;
+}
+
+@media (max-width: 720px) {
+  .site-header .brand-with-icon {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .site-header .brand-icon {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    min-height: 36px !important;
+    max-height: 36px !important;
+  }
+
+  .site-header .brand-title {
+    font-size: 15px !important;
+  }
+
+  .site-header .brand-fc {
+    font-size: 14px !important;
+  }
+}
