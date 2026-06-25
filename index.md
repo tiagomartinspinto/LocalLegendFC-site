@@ -1,6 +1,6 @@
 ---
 title: Local Legend FC
-description: Small Club, Big Dreams. A premium, fully offline retro football management game about building a fictional local club into a local legend.
+description: Small Club, Big Dreams. A paid upfront retro indie football management game about building a fictional local club into a local legend.
 ---
 
 <section class="teaser" aria-label="Teaser video">

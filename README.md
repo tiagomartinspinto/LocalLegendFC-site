@@ -2,7 +2,7 @@
 
 This repository contains the public support, privacy, and product-information website for **Local Legend FC**.
 
-Local Legend FC is a premium offline retro football management game. The app has no accounts, advertising, analytics, tracking, or network features, and it does not collect or send personal data.
+Local Legend FC is a paid upfront retro indie football management game. The app has no accounts, advertising, analytics, tracking, or network features, and it does not collect or send personal data.
 
 ## Public pages
 
