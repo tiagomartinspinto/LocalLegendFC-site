@@ -708,3 +708,163 @@ figcaption {
     width: auto !important;
   }
 }
+
+/* --- full-site retro computer font pass --- */
+
+/* Use old-computer style system fonts everywhere, no external fonts */
+:root {
+  --retro-font: "Monaco", "Menlo", "Consolas", "Lucida Console", "Courier New", monospace;
+}
+
+/* Force every visible element to use the retro computer stack */
+html,
+body,
+button,
+input,
+textarea,
+select,
+a,
+p,
+span,
+strong,
+em,
+small,
+li,
+dt,
+dd,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-nav a,
+.button,
+.system-card,
+.release-card,
+.feature-grid article,
+.trust-strip,
+.site-footer {
+  font-family: var(--retro-font) !important;
+}
+
+/* Make browser text look less smooth and more old-display-like */
+body {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  font-variant-ligatures: none;
+}
+
+/* More balanced retro type hierarchy */
+.hero h1 {
+  font-family: var(--retro-font) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.035em !important;
+  text-transform: uppercase !important;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.feature-grid h3,
+.release-card strong,
+.site-mark-text span,
+.site-mark-text strong {
+  font-family: var(--retro-font) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+}
+
+/* DOS-style small labels */
+.eyebrow,
+.system-title,
+.feature-grid article span,
+figcaption,
+.site-nav a,
+.button,
+.trust-strip span,
+.release-card span {
+  font-family: var(--retro-font) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+}
+
+/* Body copy should still be readable */
+p,
+li,
+dd,
+dt {
+  letter-spacing: 0.015em !important;
+}
+
+/* Terminal-style text rhythm */
+.content p,
+.content li,
+.hero-text,
+.lead-copy p,
+.note-box p,
+.system-card,
+.release-card p {
+  font-size: 16px !important;
+  line-height: 1.62 !important;
+}
+
+/* Make buttons feel like keyboard commands */
+.button::before,
+.site-nav a::before {
+  content: "[";
+  color: currentColor;
+}
+
+.button::after,
+.site-nav a::after {
+  content: "]";
+  color: currentColor;
+}
+
+/* Keep nav readable after adding brackets */
+.site-nav a {
+  gap: 2px !important;
+}
+
+/* Stronger command-line heading style */
+.content h2::before,
+.feature-grid h3::before {
+  content: "> ";
+  color: var(--amber);
+}
+
+/* Do not prefix homepage hero/title duplicates */
+.hero h1::before,
+.section-heading h2::before,
+.lead-copy h2::before {
+  content: none !important;
+}
+
+/* Mobile readability */
+@media (max-width: 720px) {
+  body {
+    font-size: 15px !important;
+  }
+
+  .content p,
+  .content li,
+  .hero-text,
+  .lead-copy p,
+  .note-box p,
+  .system-card,
+  .release-card p {
+    font-size: 15px !important;
+    line-height: 1.58 !important;
+  }
+
+  .site-nav a,
+  .button {
+    font-size: 11px !important;
+    letter-spacing: 0.1em !important;
+  }
+}
