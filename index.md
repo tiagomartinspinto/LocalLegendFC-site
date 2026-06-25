@@ -3,18 +3,44 @@ title: Local Legend FC
 description: Small Club, Big Dreams. A premium, fully offline retro football management game about building a fictional local club into a local legend.
 ---
 
-<section class="lead-grid" aria-label="Game overview">
-  <div class="lead-copy">
-    <p class="eyebrow">Premium offline football management</p>
-    <h2>Build a small club with no ads, no tracking, and no nonsense.</h2>
-    <p>Choose a footballing home, guide a fictional squad through league and cup matches, make half-time decisions, manage limited resources, and build a legacy season by season.</p>
+<section class="teaser" aria-label="Teaser video">
+  <div class="section-heading">
+    <p class="eyebrow">Teaser</p>
+    <h2>A quick look</h2>
   </div>
+  <video class="teaser-video" muted playsinline controls preload="metadata"
+         poster="{{ '/assets/video/local-legend-fc-teaser-poster.png' | relative_url }}">
+    <source src="{{ '/assets/video/local-legend-fc-teaser.mp4' | relative_url }}" type="video/mp4">
+    A short recording of the game running on iPhone.
+  </video>
+</section>
 
-  <div class="release-card">
-    <span>Current build</span>
-    <strong>v1.0 release candidate</strong>
-    <p>Frozen for TestFlight except for critical bugs and App Store setup.</p>
+<section class="why" aria-label="Why it exists">
+  <div class="section-heading">
+    <p class="eyebrow">Where it comes from</p>
+    <h2>Built from memory</h2>
   </div>
+  <p>It grew out of childhood memories of playing DOS-era football management games in Portugal with friends, when a few lines of text and a table of results were enough to build a whole football world. It keeps the spirit of district-level matches and the chaotic, funny, muddy stories that live far from the big stadiums.</p>
+</section>
+
+<section class="feature-grid" aria-label="Features">
+  <article>
+    <span>01</span>
+    <h3>Build a local club</h3>
+    <p>Pick a fictional home, sign players with simple filters, and grow a legacy season by season.</p>
+  </article>
+
+  <article>
+    <span>02</span>
+    <h3>Manage on matchday</h3>
+    <p>Read the game, change your approach at half-time, and live with the result.</p>
+  </article>
+
+  <article>
+    <span>03</span>
+    <h3>Private by design</h3>
+    <p>Fully offline. Saves stay on the device and no personal data is collected.</p>
+  </article>
 </section>
 
 <section class="trust-strip" aria-label="Privacy and business model">
@@ -25,86 +51,13 @@ description: Small Club, Big Dreams. A premium, fully offline retro football man
   <span>No accounts</span>
 </section>
 
-<section class="feature-grid" aria-label="Features">
-  <article>
-    <span>01</span>
-    <h3>Pick a local home</h3>
-    <p>Start in a fictional football world shaped by real countries and regions.</p>
-  </article>
+<p class="center-action">
+  <a class="button primary" href="{{ '/screenshots/' | relative_url }}">Screenshots</a>
+  <a class="button" href="{{ '/support/' | relative_url }}">Support</a>
+  <a class="button" href="{{ '/privacy/' | relative_url }}">Privacy</a>
+</p>
 
-  <article>
-    <span>02</span>
-    <h3>Choose your difficulty</h3>
-    <p>Relaxed, Normal, or Hard. Keep the dream gentle or make every point hurt.</p>
-  </article>
-
-  <article>
-    <span>03</span>
-    <h3>Buy smart, not big</h3>
-    <p>Use simple transfer filters to find useful players by position and overall rating.</p>
-  </article>
-
-  <article>
-    <span>04</span>
-    <h3>React on matchday</h3>
-    <p>Read the match, change approach at half-time, and live with the consequences.</p>
-  </article>
-
-  <article>
-    <span>05</span>
-    <h3>Survive setbacks</h3>
-    <p>Bad form, cards, injuries, and local chaos can all bend a season out of shape.</p>
-  </article>
-
-  <article>
-    <span>06</span>
-    <h3>Private by design</h3>
-    <p>The app runs offline. Saves stay on the device and no personal data is collected.</p>
-  </article>
-</section>
-
-<section class="screenshot-preview" aria-label="Screenshot preview">
-  <div class="section-heading">
-    <p class="eyebrow">Screenshots</p>
-    <h2>Inside the current build</h2>
-    <p>Representative screenshots from the current v1.0 release candidate.</p>
-  </div>
-
-  <div class="preview-grid">
-    <a class="phone-card" href="{{ '/screenshots/' | relative_url }}">
-      <img src="{{ '/assets/screenshots/05-dashboard.png' | relative_url }}" alt="Local Legend FC dashboard screenshot">
-      <span>Club dashboard</span>
-    </a>
-
-    <a class="phone-card" href="{{ '/screenshots/' | relative_url }}">
-      <img src="{{ '/assets/screenshots/04-new-game-club.png' | relative_url }}" alt="Local Legend FC club selection screenshot">
-      <span>Choose a local club</span>
-    </a>
-
-    <a class="phone-card" href="{{ '/screenshots/' | relative_url }}">
-      <img src="{{ '/assets/screenshots/07-match.png' | relative_url }}" alt="Local Legend FC match result screenshot">
-      <span>Match result</span>
-    </a>
-  </div>
-
-  <p class="center-action"><a class="button primary" href="{{ '/screenshots/' | relative_url }}">Open full gallery</a></p>
-</section>
-
-<section class="screenshot-preview" aria-label="Inspiration">
-  <div class="section-heading">
-    <p class="eyebrow">Where it comes from</p>
-    <h2>Built from memory</h2>
-  </div>
-
-  <p>Local Legend FC grew out of childhood memories of playing DOS-era football management games in Portugal with friends, when a few lines of text and a table of results were enough to create a whole football world.</p>
-
-  <p>It carries the spirit of old football databases, strange fictional player names, Portuguese local football culture, district-level matches, and the chaotic, funny, muddy stories that live far away from the big stadiums.</p>
-
-  <p>It is not connected to any real club, league, TV show, player, competition, or game series. It is a fictional game built from memory, affection, and the strange beauty of small football dreams.</p>
-</section>
-
-<section class="note-box" aria-label="Fictional world disclaimer">
+<section class="note-box" aria-label="Fictional world">
   <p class="eyebrow">Fictional world</p>
-  <p>Local Legend FC is a work of fiction. Clubs, players, towns, stadiums, competitions, football organizations, and match events are fictional. Real country and region names are used only as geographic setting.</p>
-  <p>The app is not affiliated with or endorsed by any real club, league, player, governing body, or other organization.</p>
+  <p>Clubs, players, towns, stadiums, competitions, and match events are fictional. Real country and region names are used only as setting. This game is not affiliated with, endorsed by, or connected to any real club, league, player, competition, game series, or governing body.</p>
 </section>

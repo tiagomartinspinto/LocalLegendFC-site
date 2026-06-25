@@ -196,6 +196,8 @@ a:focus-visible {
 .release-card,
 .feature-grid article,
 .screenshot-preview,
+.teaser,
+.why,
 .note-box,
 .phone-card,
 .screenshot-grid figure {
@@ -387,8 +389,24 @@ figcaption {
 .lead-copy,
 .release-card,
 .screenshot-preview,
+.teaser,
+.why,
 .note-box {
   padding: clamp(20px, 3vw, 30px);
+}
+
+.teaser,
+.why {
+  margin: 18px 0;
+}
+
+.teaser-video {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 16px auto 0;
+  border: 1px solid var(--line);
+  background: #000;
 }
 
 .lead-copy {
