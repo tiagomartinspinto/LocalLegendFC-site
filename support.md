@@ -7,7 +7,7 @@ permalink: /support/
 
 Local Legend FC is a premium offline retro football management game about building a fictional local club into a local legend.
 
-[Home](https://tiagomartinspinto.github.io/LocalLegendFC-site/) · [Privacy Policy](https://tiagomartinspinto.github.io/LocalLegendFC-site/privacy/)
+[Home]({{ '/' | relative_url }}) · [Privacy Policy]({{ '/privacy/' | relative_url }})
 
 **Support contact:** LocalLegendFC@protonmail.com
 

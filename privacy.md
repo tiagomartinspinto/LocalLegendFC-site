@@ -7,7 +7,7 @@ permalink: /privacy/
 
 **Effective date:** June 24, 2026
 
-[Home](https://tiagomartinspinto.github.io/LocalLegendFC-site/) · [Support](https://tiagomartinspinto.github.io/LocalLegendFC-site/support/)
+[Home]({{ '/' | relative_url }}) · [Support]({{ '/support/' | relative_url }})
 
 ## Overview
 

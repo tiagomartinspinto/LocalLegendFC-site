@@ -67,7 +67,7 @@ description: Small Club, Big Dreams. A premium, fully offline retro football man
   <div class="section-heading">
     <p class="eyebrow">Screenshots</p>
     <h2>Inside the current build</h2>
-    <p>Representative screenshots from the current Local Legend FC v1.0 release candidate.</p>
+    <p>Representative screenshots from the current v1.0 release candidate.</p>
   </div>
 
   <div class="preview-grid">
@@ -88,6 +88,19 @@ description: Small Club, Big Dreams. A premium, fully offline retro football man
   </div>
 
   <p class="center-action"><a class="button primary" href="{{ '/screenshots/' | relative_url }}">Open full gallery</a></p>
+</section>
+
+<section class="screenshot-preview" aria-label="Inspiration">
+  <div class="section-heading">
+    <p class="eyebrow">Where it comes from</p>
+    <h2>Built from memory</h2>
+  </div>
+
+  <p>Local Legend FC grew out of childhood memories of playing DOS-era football management games in Portugal with friends, when a few lines of text and a table of results were enough to create a whole football world.</p>
+
+  <p>It carries the spirit of old football databases, strange fictional player names, Portuguese local football culture, district-level matches, and the chaotic, funny, muddy stories that live far away from the big stadiums.</p>
+
+  <p>It is not connected to any real club, league, TV show, player, competition, or game series. It is a fictional game built from memory, affection, and the strange beauty of small football dreams.</p>
 </section>
 
 <section class="note-box" aria-label="Fictional world disclaimer">

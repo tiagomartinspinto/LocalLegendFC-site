@@ -6,8 +6,8 @@ Local Legend FC is a premium offline retro football management game. The app has
 
 ## Public pages
 
-- [Website](https://tiagomartinspinto.github.io/LocalLegendFC-site/)
-- [Support](https://tiagomartinspinto.github.io/LocalLegendFC-site/support/)
-- [Privacy Policy](https://tiagomartinspinto.github.io/LocalLegendFC-site/privacy/)
+- [Website](https://locallegendfc.com/)
+- [Support](https://locallegendfc.com/support/)
+- [Privacy Policy](https://locallegendfc.com/privacy/)
 
 The game source code is maintained separately and is not part of this repository.
