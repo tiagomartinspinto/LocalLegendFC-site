@@ -582,3 +582,248 @@ figcaption {
     opacity: 0.04;
   }
 }
+
+/* --- stronger pixel / CRT pass --- */
+
+:root {
+  --pixel-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  --pixel-green-shadow: 3px 3px 0 #102d18;
+  --scanline-opacity: 0.18;
+}
+
+/* stronger old monitor layer */
+.crt {
+  opacity: var(--scanline-opacity);
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.10) 0,
+      rgba(255, 255, 255, 0.10) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      to right,
+      rgba(116, 255, 122, 0.035) 0,
+      rgba(116, 255, 122, 0.035) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+  mix-blend-mode: screen;
+}
+
+/* subtle CRT vignette */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  background:
+    radial-gradient(circle at center, transparent 52%, rgba(0, 0, 0, 0.40) 100%);
+}
+
+/* old computer feel */
+body {
+  text-rendering: geometricPrecision;
+  image-rendering: pixelated;
+}
+
+/* blocky pixel UI */
+.panel,
+.feature-grid article,
+.status-card,
+.terminal-note,
+.phone-frame,
+.gallery-polished figure,
+.brand,
+.site-nav a,
+.button,
+.trust-strip span {
+  border-radius: 0 !important;
+  box-shadow: var(--pixel-shadow), inset 0 0 0 1px rgba(116, 255, 122, 0.16);
+}
+
+/* chunky retro title */
+.hero h1,
+.brand-title,
+.brand-fc,
+.content h1,
+.content h2,
+.content h3 {
+  letter-spacing: -0.03em;
+  text-shadow:
+    2px 0 0 rgba(116, 255, 122, 0.22),
+    0 2px 0 rgba(116, 255, 122, 0.12),
+    var(--pixel-green-shadow);
+}
+
+/* terminal green phosphor glow, but still readable */
+.hero h1 {
+  text-shadow:
+    0 0 8px rgba(116, 255, 122, 0.35),
+    0 0 18px rgba(116, 255, 122, 0.18),
+    4px 4px 0 #102d18;
+}
+
+/* pixelated brand block */
+.brand {
+  position: relative;
+  border-width: 3px;
+}
+
+.brand::after {
+  content: "PRESS START";
+  margin-top: 6px;
+  color: var(--dim);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* pixel-corner style panels */
+.panel,
+.feature-grid article,
+.status-card,
+.terminal-note,
+.preview-section,
+.gallery-polished figure {
+  position: relative;
+}
+
+.panel::before,
+.feature-grid article::before,
+.status-card::before,
+.terminal-note::before,
+.preview-section::before,
+.gallery-polished figure::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  pointer-events: none;
+  border: 1px dashed rgba(116, 255, 122, 0.18);
+}
+
+/* more DOS prompt labels */
+.kicker,
+.prompt,
+.status-label,
+.terminal-title,
+.feature-code,
+figcaption {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+}
+
+/* hard-edged retro buttons */
+.button,
+.site-nav a {
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  box-shadow: 3px 3px 0 #000;
+}
+
+.button:hover,
+.button:focus-visible,
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 #000;
+}
+
+/* pixel cards */
+.feature-grid article {
+  background:
+    linear-gradient(135deg, rgba(116, 255, 122, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(13, 28, 14, 0.98), rgba(5, 10, 6, 0.98));
+}
+
+.feature-code::before {
+  content: "[";
+  color: var(--green);
+}
+
+.feature-code::after {
+  content: "]";
+  color: var(--green);
+}
+
+/* make screenshots feel like cartridges / CRT phone captures */
+.phone-frame,
+.gallery-polished figure {
+  padding: 14px;
+  background:
+    linear-gradient(180deg, #111911, #050705);
+  border-width: 3px;
+}
+
+.phone-frame img,
+.screenshot-grid img {
+  border-radius: 0;
+  image-rendering: pixelated;
+  box-shadow:
+    0 0 0 3px #000,
+    0 0 0 5px var(--line),
+    0 18px 28px rgba(0, 0, 0, 0.55);
+}
+
+/* stronger gallery rhythm */
+.gallery-polished {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 24px;
+}
+
+/* homepage trust strip like old DOS status bar */
+.trust-strip {
+  border: 2px solid var(--line);
+  padding: 8px;
+  background: #050805;
+  box-shadow: var(--pixel-shadow);
+}
+
+.trust-strip span {
+  color: var(--bg);
+  background: var(--amber);
+  border-color: var(--amber);
+  box-shadow: 2px 2px 0 #000;
+}
+
+/* terminal note becomes command-line block */
+.terminal-note {
+  border-color: var(--amber-soft);
+}
+
+.terminal-note p:not(.kicker)::before {
+  content: "> ";
+  color: var(--green);
+}
+
+/* mobile: keep pixel look but avoid huge cramped shadows */
+@media (max-width: 720px) {
+  :root {
+    --pixel-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 16vw, 72px);
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .gallery-polished {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* motion-sensitive users keep the vibe without blinking */
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none !important;
+  }
+
+  .crt {
+    opacity: 0.07;
+  }
+}
