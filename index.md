@@ -51,10 +51,10 @@ description: Small Club, Big Dreams. A premium, fully offline retro football man
   <span>No accounts</span>
 </section>
 
-<p class="center-action">
-  <a class="button primary" href="{{ '/screenshots/' | relative_url }}">Screenshots</a>
-  <a class="button" href="{{ '/support/' | relative_url }}">Support</a>
-  <a class="button" href="{{ '/privacy/' | relative_url }}">Privacy</a>
+<p class="explore-links">
+  <a href="{{ '/screenshots/' | relative_url }}">Screenshots</a>
+  <a href="{{ '/support/' | relative_url }}">Support</a>
+  <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
 </p>
 
 <section class="note-box" aria-label="Fictional world">
