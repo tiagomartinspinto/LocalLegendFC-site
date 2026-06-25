@@ -868,3 +868,163 @@ dt {
     letter-spacing: 0.1em !important;
   }
 }
+
+/* --- Google Font: Press Start 2P --- */
+
+:root {
+  --retro-font: "Press Start 2P", "Monaco", "Menlo", "Consolas", "Courier New", monospace;
+}
+
+/* Use Press Start 2P across the whole website */
+html,
+body,
+button,
+input,
+textarea,
+select,
+a,
+p,
+span,
+strong,
+em,
+small,
+li,
+dt,
+dd,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-nav a,
+.button,
+.system-card,
+.release-card,
+.feature-grid article,
+.trust-strip,
+.site-footer {
+  font-family: var(--retro-font) !important;
+}
+
+/* Press Start 2P needs smaller sizes and more line height */
+body {
+  font-size: 12px !important;
+  line-height: 1.85 !important;
+  letter-spacing: 0 !important;
+  -webkit-font-smoothing: none;
+  font-variant-ligatures: none;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5.4vw, 58px) !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0 !important;
+}
+
+.hero-text,
+.tagline {
+  font-size: clamp(12px, 1.45vw, 15px) !important;
+  line-height: 1.9 !important;
+  max-width: 760px !important;
+}
+
+.content,
+.content p,
+.content li,
+.lead-copy p,
+.note-box p,
+.release-card p,
+.system-card {
+  font-size: 11px !important;
+  line-height: 1.9 !important;
+}
+
+.content h1 {
+  font-size: clamp(22px, 4vw, 36px) !important;
+  line-height: 1.25 !important;
+}
+
+.content h2,
+.lead-copy h2,
+.section-heading h2 {
+  font-size: clamp(16px, 2.4vw, 24px) !important;
+  line-height: 1.4 !important;
+}
+
+.content h3,
+.feature-grid h3 {
+  font-size: clamp(12px, 1.4vw, 16px) !important;
+  line-height: 1.45 !important;
+}
+
+.eyebrow,
+.system-title,
+.feature-grid article span,
+figcaption,
+.site-nav a,
+.button,
+.trust-strip span,
+.release-card span {
+  font-size: 9px !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.site-mark-text span,
+.site-mark-text strong {
+  font-size: 10px !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+}
+
+.site-nav a,
+.button {
+  min-height: 42px !important;
+  padding: 9px 10px !important;
+}
+
+/* Reduce title glow because Press Start 2P already has strong shape */
+.hero h1,
+.content h1,
+.content h2,
+.content h3 {
+  text-shadow:
+    0 0 6px rgba(116, 255, 122, 0.22),
+    3px 3px 0 #102d18 !important;
+}
+
+/* Mobile: keep it readable */
+@media (max-width: 720px) {
+  body {
+    font-size: 11px !important;
+    line-height: 1.85 !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(26px, 10vw, 42px) !important;
+    line-height: 1.18 !important;
+  }
+
+  .hero-text,
+  .tagline,
+  .content,
+  .content p,
+  .content li,
+  .lead-copy p,
+  .note-box p,
+  .release-card p,
+  .system-card {
+    font-size: 10px !important;
+    line-height: 1.9 !important;
+  }
+
+  .site-nav a,
+  .button,
+  .eyebrow,
+  .system-title,
+  figcaption {
+    font-size: 8px !important;
+  }
+}
