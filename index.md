@@ -1,10 +1,7 @@
 ---
 title: Local Legend FC
+description: Small Club, Big Dreams — a premium, fully offline retro football-management game about building a fictional local club into a local legend.
 ---
-
-# Local Legend FC
-
-## Small Club, Big Dreams
 
 Local Legend FC is a premium offline retro football management game about building a fictional local club into a local legend.
 
@@ -22,7 +19,7 @@ Local Legend FC is fully offline. No personal data is collected or sent. The app
 
 - [Support](https://tiagomartinspinto.github.io/LocalLegendFC-site/support/)
 - [Privacy Policy](https://tiagomartinspinto.github.io/LocalLegendFC-site/privacy/)
-- [Screenshot Preview Plan](https://tiagomartinspinto.github.io/LocalLegendFC-site/screenshots/)
+- [Screenshots](https://tiagomartinspinto.github.io/LocalLegendFC-site/screenshots/)
 - **App Store / TestFlight:** Coming soon
 
 ## Fictional-World Disclaimer
