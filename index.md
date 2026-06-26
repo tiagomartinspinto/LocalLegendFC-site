@@ -1,6 +1,6 @@
 ---
 title: Local Legend FC
-description: Small Club, Big Dreams. A retro indie football management game for iPhone. Build a tiny fictional club into a local legend. Paid upfront, offline. Coming soon.
+description: Small Club, Big Dreams. A free retro indie football management game for iPhone. Build a tiny fictional club into a local legend. Fully offline, no ads, no tracking. Coming soon.
 ---
 
 <section class="teaser" aria-label="Teaser video">
@@ -44,11 +44,12 @@ description: Small Club, Big Dreams. A retro indie football management game for 
 </section>
 
 <section class="trust-strip" aria-label="Privacy and business model">
-  <span>Paid upfront</span>
+  <span>Free</span>
   <span>Offline saves</span>
   <span>No ads</span>
   <span>No tracking</span>
   <span>No accounts</span>
+  <span>No in-app purchases</span>
 </section>
 
 <p class="explore-links">

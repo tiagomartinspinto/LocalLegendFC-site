@@ -31,7 +31,7 @@ If a parent or guardian has a question about this policy, they may use the conta
 
 The app itself does not integrate third-party advertising, analytics, tracking, account, or social-network services.
 
-Apple may process download, purchase, TestFlight, device, or crash-related information as part of operating the App Store and TestFlight. That processing is controlled by Apple and is subject to Apple's own privacy policies. Local Legend FC does not receive personal data from the app itself.
+Apple may process download, TestFlight, device, or crash-related information as part of operating the App Store and TestFlight. That processing is controlled by Apple and is subject to Apple's own privacy policies. Local Legend FC does not receive personal data from the app itself.
 
 ## Website
 

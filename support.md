@@ -5,7 +5,7 @@ permalink: /support/
 
 # Local Legend FC Support
 
-Local Legend FC is a paid upfront retro indie football management game about building a fictional local club into a local legend.
+Local Legend FC is a free retro indie football management game about building a fictional local club into a local legend.
 
 [Home]({{ '/' | relative_url }}) · [Privacy Policy]({{ '/privacy/' | relative_url }})
 
